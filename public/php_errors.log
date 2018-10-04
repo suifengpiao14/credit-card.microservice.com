@@ -1,0 +1,26 @@
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP Notice:  Undefined property: App\Controllers\Api\v1\CreditController::$response in D:\GIT\credit.microservice.com\app\Controllers\Api\v1\CreditController.php on line 66
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP Stack trace:
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP   1. {main}() D:\GIT\credit.microservice.com\public\index.php:0
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP   2. Slim\App->run() D:\GIT\credit.microservice.com\public\index.php:4
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP   3. Slim\App->process() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\App.php:314
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP   4. Slim\App->callMiddlewareStack() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\App.php:406
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP   5. Slim\App->__invoke() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\MiddlewareAwareTrait.php:117
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP   6. Slim\Route->run() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\App.php:515
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP   7. Slim\Route->callMiddlewareStack() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\Route.php:334
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP   8. Slim\Route->__invoke() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\MiddlewareAwareTrait.php:117
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\Route.php:356
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP  10. call_user_func:{D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php:41}() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php:41
+[04-Oct-2018 17:40:32 Asia/Shanghai] PHP  11. App\Controllers\Api\v1\CreditController->whichCard() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php:41
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP Notice:  Undefined property: App\Controllers\Api\v1\CreditController::$request in D:\GIT\credit.microservice.com\app\Controllers\Api\v1\CreditController.php on line 115
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP Stack trace:
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP   1. {main}() D:\GIT\credit.microservice.com\public\index.php:0
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP   2. Slim\App->run() D:\GIT\credit.microservice.com\public\index.php:4
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP   3. Slim\App->process() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\App.php:314
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP   4. Slim\App->callMiddlewareStack() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\App.php:406
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP   5. Slim\App->__invoke() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\MiddlewareAwareTrait.php:117
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP   6. Slim\Route->run() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\App.php:515
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP   7. Slim\Route->callMiddlewareStack() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\Route.php:334
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP   8. Slim\Route->__invoke() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\MiddlewareAwareTrait.php:117
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP   9. Slim\Handlers\Strategies\RequestResponse->__invoke() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\Route.php:356
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP  10. call_user_func:{D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php:41}() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php:41
+[04-Oct-2018 17:42:34 Asia/Shanghai] PHP  11. App\Controllers\Api\v1\CreditController->whichCardAndDate() D:\GIT\credit.microservice.com\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php:41

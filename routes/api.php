@@ -16,6 +16,10 @@ $app->get('/', function (Request $request, Response $response, $arguments = []) 
 });
 
 
+
+$app->get('/api/v1/credit/which-card', 'App\\Controllers\\Api\\v1\\CreditController:whichCard')->setName('which_card');
+$app->get('/api/v1/credit/which-card-and-date', 'App\\Controllers\\Api\\v1\\CreditController:whichCardAndDate')->setName('which_card_and_date');
+
 /*
  *  文档json地址
  */

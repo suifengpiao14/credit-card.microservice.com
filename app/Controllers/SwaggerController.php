@@ -24,9 +24,9 @@ class SwaggerController
      * @SWG\Swagger(
      *   schemes={"http"},
      *   @SWG\Info(
-     *     title="用户鉴权微服务接口",
+     *     title="行用卡微服务接口",
      *     version="1.0.0",
-     *     description="地址：http://auth.microservice.com",
+     *     description="地址：http://credit.microservice.com",
      *     @SWG\Contact(
      *          email="2912150017@qq.com"
      *      ),

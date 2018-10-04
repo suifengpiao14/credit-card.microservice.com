@@ -19,30 +19,15 @@ $container['view'] = function ($c) {
 // Database.
 $container['db'] = function ($c) {
     $config = $c->get('settings')['db'];
-    $driver = $config['driver'];
-    $host = $config['host'];
-    $port = $config['port'];
-    $database = $config['database'];
-    $user = $config['username'];
-    $password = $config['password'];
-    $charset = $config['charset'];
-    $debug = $c->get('settings')['debug'];
-    $dsn = isset($port)
-        ? "{$driver}:host={$host};port={$port};dbname={$database};charset={$charset}"
-        : "{$driver}:host={$host};dbname={$database};charset={$charset}";
+    $capsule = new \Illuminate\Database\Capsule\Manager;
+    $capsule->addConnection($config);
 
-    try {
-        $pdo = new \PDO($dsn, $user, $password);
-        $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-        // If you want to use a Repository.
-        //$apiRepo = new \App\Db\ApiRepository($pdo, $debug);
-        //$apiRepo->appRouter = $c->get('router');
-        //return $apiRepo;
-        return $pdo;
-    } catch (\PDOException $e) {
-        throw $e;
-    }
+    $capsule->setAsGlobal();
+    $capsule->bootEloquent();
+
+    return $capsule;
 };
+$container->get('db');//实例化db
 
 $container['cache'] = function ($c) {
     if (APP_ENV_DEV) {//开发环境使用虚拟缓存

@@ -1,0 +1,30 @@
+{
+  "name": "suifengpiao14/php-pre-commit",
+  "description": "A simple library for specification code",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "suifengpiao14",
+      "email": "1019439917@qq.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/suifengpiao14/php-pre-commit/issues"
+  },
+  "require": {
+    "friendsofphp/php-cs-fixer": "*",
+    "phpmd/phpmd": "@stable",
+    "sebastian/phpcpd": "*",
+    "squizlabs/php_codesniffer": "*"
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "sh ./vendor/suifengpiao14/php-pre-commit/src/setup.sh"
+    ],
+    "post-update-cmd": [
+      "sh ./vendor/suifengpiao14/php-pre-commit/src/setup.sh"
+    ]
+  }
+}
+
